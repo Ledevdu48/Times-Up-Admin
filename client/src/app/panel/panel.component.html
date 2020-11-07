@@ -1,0 +1,22 @@
+<div class="row">
+    <h1>Admin panel</h1>
+
+<ul>Indicators:
+    <li>Number of rooms: {{numberRooms}}</li>
+    <li>Number of players: {{numberPlayers}}</li>
+    <li>Average score per rooms: {{averageScorePerRoom}}</li>
+</ul>
+
+<button class="btn btn-primary" (click)="onUpdate()">Update</button>
+</div>
+<div class="row mt-2 chart">
+    <canvas id="myChart"></canvas>
+</div>
+<div class="row">
+    <button class="btn btn-primary" (click)="onPlotData1hour()">Plot 1 hour</button>
+    <button class="btn btn-primary" (click)="onPlotData24hours()">Plot 24 hours</button>
+    <button class="btn btn-primary" (click)="onPlotData1week()">Plot 1 week</button>
+</div>
+
+
+
