@@ -18,6 +18,7 @@
     <button class="btn btn-primary" (click)="onPlotData1week()">Plot 1 week</button>
 </div>
 <div *ngFor="let room of rooms; index as i">
+    {{room.code}}
     Game {{i+1}}/
     <div *ngFor="let player of room.game.players">
         {{player[1]}}
