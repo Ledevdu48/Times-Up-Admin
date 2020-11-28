@@ -17,6 +17,18 @@
     <button class="btn btn-primary" (click)="onPlotData24hours()">Plot 24 hours</button>
     <button class="btn btn-primary" (click)="onPlotData1week()">Plot 1 week</button>
 </div>
+<div *ngFor="let room of rooms; index as i">
+    Game {{i+1}}/
+    <div *ngFor="let player of room.game.players">
+        {{player[1]}}
+    </div>/
+    {{room.game.stageGame}}/
+    {{room.game.score}}/
+    {{room.game.parameters.numberProp}}
+    {{room.game.parameters.timer['Step 1']}}
+    {{room.game.parameters.timer['Step 2']}}
+    {{room.game.parameters.timer['Step 3']}}/
+</div>
 
 
 
